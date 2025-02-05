@@ -21,7 +21,6 @@ class ClientHandler implements Runnable {
         ) {
             this.writer = writer;
 
-//            writer.println("Enter your nickname:");
             nickname = reader.readLine();
             System.out.println(nickname + " joined the chat.");
             ChatServer.output(nickname + " joined the chat.", this);
